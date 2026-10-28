@@ -4,9 +4,7 @@ export function useGsap(callback: (context: gsap.Context) => void, scope?: Eleme
   let context: gsap.Context | undefined
 
   onMounted(() => {
-    if (context) {
-      context = gsap.context(() => callback(context!), scope)
-    }
+      context = gsap.context((ctx) => callback(ctx), scope)
   })
 
   onUnmounted(() => {
