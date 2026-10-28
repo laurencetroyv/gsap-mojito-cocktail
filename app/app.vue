@@ -1,7 +1,6 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <p class="flex-center">Hello Gsap!</p>
   </div>
 </template>
 
