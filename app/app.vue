@@ -1,6 +1,8 @@
 <template>
     <main>
         <navbar />
+        <hero />
+        <div class="h-dvh bg-black" />
     </main>
 </template>
 
