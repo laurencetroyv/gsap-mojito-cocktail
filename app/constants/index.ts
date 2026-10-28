@@ -1,4 +1,4 @@
-const navLinks = [
+export const nav_links = [
  {
 	id: "cocktails",
 	title: "Cocktails",
@@ -170,7 +170,7 @@ const sliderLists = [
 ];
 
 export {
- navLinks,
+ nav_links as navLinks,
  cocktailLists,
  mockTailLists,
  profileLists,

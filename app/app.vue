@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <p class="flex-center">Hello Gsap!</p>
-  </div>
+    <main>
+        <navbar />
+    </main>
 </template>
 
 <script lang="ts" setup>
