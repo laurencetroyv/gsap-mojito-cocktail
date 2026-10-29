@@ -3,6 +3,7 @@
         <navbar />
         <hero />
         <cocktails />
+      <about />
     </main>
 </template>
 

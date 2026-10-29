@@ -168,16 +168,3 @@ const sliderLists = [
 	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
  },
 ];
-
-export {
- nav_links as navLinks,
- cocktailLists,
- mockTailLists,
- profileLists,
- featureLists,
- goodLists,
- openingHours,
- storeInfo,
- socials,
- sliderLists,
-};
