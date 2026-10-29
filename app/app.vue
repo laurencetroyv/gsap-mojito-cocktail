@@ -2,7 +2,7 @@
     <main>
         <navbar />
         <hero />
-        <div class="h-dvh bg-black" />
+        <cocktails />
     </main>
 </template>
 

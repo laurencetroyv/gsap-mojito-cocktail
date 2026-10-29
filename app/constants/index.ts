@@ -17,7 +17,7 @@ export const nav_links = [
  },
 ];
 
-const cocktailLists = [
+export const cocktail_lists = [
  {
 	name: "Chapel Hill Shiraz",
 	country: "AU",
@@ -44,7 +44,7 @@ const cocktailLists = [
  },
 ];
 
-const mockTailLists = [
+export const mock_tail_lists = [
  {
 	name: "Tropical Bloom",
 	country: "US",
