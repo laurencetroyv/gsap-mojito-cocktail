@@ -1,6 +1,6 @@
-<script lang="ts" setup>
-import {cocktail_lists, mock_tail_lists} from "~/constants";
-import gsap from "gsap"
+<script lang="ts" setup vapor>
+import { cocktail_lists, mock_tail_lists } from "~/constants";
+import gsap from "gsap";
 
 useGsap(() => {
   const timeline = gsap.timeline({
@@ -9,17 +9,19 @@ useGsap(() => {
       start: "top 30%",
       end: "bottom 80%",
       scrub: true,
-    }
-  })
+    },
+  });
 
-  timeline.from("#c-left-leaf", {
-    x: -100,
-    y: 100,
-  }).from("#c-right-leaf", {
-    x: 100,
-    y: 100,
-  })
-})
+  timeline
+    .from("#c-left-leaf", {
+      x: -100,
+      y: 100,
+    })
+    .from("#c-right-leaf", {
+      x: 100,
+      y: 100,
+    });
+});
 </script>
 
 <template>
@@ -32,12 +34,12 @@ useGsap(() => {
         <h2>Most popular cocktails:</h2>
 
         <ul>
-          <li v-for="({ name, country, detail, price }) in cocktail_lists" :key="name">
+          <li v-for="{ name, country, detail, price } in cocktail_lists" :key="name">
             <div class="md:me-28">
-              <h3>{{name}}</h3>
-              <p>{{country}} | {{ detail }}</p>
+              <h3>{{ name }}</h3>
+              <p>{{ country }} | {{ detail }}</p>
             </div>
-            <span>- {{price}}</span>
+            <span>- {{ price }}</span>
           </li>
         </ul>
       </div>
@@ -46,12 +48,12 @@ useGsap(() => {
         <h2>Most loved mocktails:</h2>
 
         <ul>
-          <li v-for="({ name, country, detail, price }) in mock_tail_lists" :key="name">
+          <li v-for="{ name, country, detail, price } in mock_tail_lists" :key="name">
             <div class="md:me-28">
-              <h3>{{name}}</h3>
-              <p>{{country}} | {{ detail }}</p>
+              <h3>{{ name }}</h3>
+              <p>{{ country }} | {{ detail }}</p>
             </div>
-            <span>- {{price}}</span>
+            <span>- {{ price }}</span>
           </li>
         </ul>
       </div>

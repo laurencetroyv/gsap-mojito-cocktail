@@ -4,19 +4,18 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   app: {
     head: {
-      link: [
-        {rel: "icon", type: "image/svg+xml", href: "/images/logo.png"},
-      ]
-    }
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/images/logo.png" }],
+    },
   },
-  css: ['~/assets/css/main.css'],
-  modules: ['@vueuse/nuxt/module'],
-  compatibilityDate: '2025-07-15',
+  css: ["~/assets/css/main.css"],
+  modules: ["@vueuse/nuxt/module", "@vizejs/nuxt"],
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {
-      plugins: [
-        tailwindcss(),
-      ],
+    plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ["gsap", "gsap/ScrollTrigger", "gsap/SplitText"],
+    },
   },
   vize: {
     compiler: {
