@@ -27,5 +27,6 @@ watchEffect((onCleanup) => {
     <cocktails />
     <about />
     <art />
+    <menu-list />
   </main>
 </template>

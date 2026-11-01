@@ -134,7 +134,7 @@ const socials = [
   },
 ];
 
-const sliderLists = [
+export const slider_lists = [
   {
     id: 1,
     name: "Classic Mojito",
