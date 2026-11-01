@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 

@@ -1,4 +1,4 @@
-<script lang="ts" setup vapor>
+<script lang="ts" setup>
 import { cocktail_lists, mock_tail_lists } from "~/constants";
 import gsap from "gsap";
 
