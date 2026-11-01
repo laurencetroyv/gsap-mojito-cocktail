@@ -18,4 +18,11 @@ export default defineNuxtConfig({
         tailwindcss(),
       ],
   },
-})
+  vize: {
+    compiler: {
+      vapor: true,
+    },
+    lint: true,
+    checker: true,
+  },
+});

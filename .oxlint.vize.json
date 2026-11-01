@@ -1,0 +1,66 @@
+{
+  "plugins": ["vue"],
+  "jsPlugins": [
+    {
+      "name": "vize",
+      "specifier": "./node_modules/.pnpm/oxlint-plugin-vize@0.608.0/node_modules/oxlint-plugin-vize/dist/index.mjs"
+    }
+  ],
+  "settings": {
+    "vize": {
+      "preset": "incremental",
+      "generatedBy": "@vizejs/nuxt"
+    }
+  },
+  "ignorePatterns": [
+    "**/dist",
+    "**/node_modules",
+    "**/.nuxt",
+    "**/.output",
+    "**/.vercel",
+    "**/.netlify",
+    "**/public"
+  ],
+  "globals": {
+    "$fetch": "readonly"
+  },
+  "rules": {
+    "vize/nuxt/prefer-import-meta": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "app/components/**/*.server.{js,ts,jsx,tsx,vue}",
+        "app/layouts/**/*.{js,ts,jsx,tsx,vue}",
+        "app/pages/**/*.{js,ts,jsx,tsx,vue}"
+      ],
+      "rules": {
+        "vize/vue/no-multiple-template-root": "error"
+      }
+    },
+    {
+      "files": ["app/pages/**/*.{js,ts,jsx,tsx,vue}"],
+      "rules": {
+        "vize/nuxt/no-page-meta-runtime-values": "error"
+      }
+    },
+    {
+      "files": ["**/.config/nuxt.?([cm])[jt]s?(x)", "**/nuxt.config.?([cm])[jt]s?(x)"],
+      "rules": {
+        "vize/nuxt/no-nuxt-config-test-key": "error"
+      }
+    },
+    {
+      "files": [
+        "app/app.{js,ts,jsx,tsx,vue}",
+        "app/components/*/**/*.{js,ts,jsx,tsx,vue}",
+        "app/error.{js,ts,jsx,tsx,vue}",
+        "app/layouts/**/*.{js,ts,jsx,tsx,vue}",
+        "app/pages/**/*.{js,ts,jsx,tsx,vue}"
+      ],
+      "rules": {
+        "vize/vue/multi-word-component-names": "off",
+      }
+    }
+  ]
+}
