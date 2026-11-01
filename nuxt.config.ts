@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  modules: ["@vueuse/nuxt/module", "@vizejs/nuxt"],
+  modules: ["@vueuse/nuxt/module", "@vizejs/nuxt", "lenis/nuxt"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {

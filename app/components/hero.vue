@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const video_ref = ref<HTMLVideoElement>();
 
-const is_mobile = useMediaQuery("(max-width: 757px");
+const is_mobile = useMediaQuery("(max-width: 757px)");
 
 function setupVideoScrub(timeline: gsap.core.Timeline, video: HTMLVideoElement) {
   timeline.to(video, {

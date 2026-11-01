@@ -1,5 +1,7 @@
 {
-  "plugins": ["vue"],
+  "plugins": [
+    "vue"
+  ],
   "jsPlugins": [
     {
       "name": "vize",
@@ -482,13 +484,18 @@
       }
     },
     {
-      "files": ["app/pages/**/*.{js,ts,jsx,tsx,vue}"],
+      "files": [
+        "app/pages/**/*.{js,ts,jsx,tsx,vue}"
+      ],
       "rules": {
         "vize/nuxt/no-page-meta-runtime-values": "error"
       }
     },
     {
-      "files": ["**/.config/nuxt.?([cm])[jt]s?(x)", "**/nuxt.config.?([cm])[jt]s?(x)"],
+      "files": [
+        "**/.config/nuxt.?([cm])[jt]s?(x)",
+        "**/nuxt.config.?([cm])[jt]s?(x)"
+      ],
       "rules": {
         "vize/nuxt/no-nuxt-config-test-key": "error"
       }
@@ -506,7 +513,9 @@
       }
     },
     {
-      "files": ["server/**/*.{js,ts,jsx,tsx}"],
+      "files": [
+        "server/**/*.{js,ts,jsx,tsx}"
+      ],
       "globals": {
         "useAppConfig": "readonly",
         "defineAppConfig": "readonly",
