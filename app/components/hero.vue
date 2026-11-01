@@ -31,7 +31,7 @@ useGsap(() => {
     opacity: 0,
     yPercent: 100,
     duration: 1.8,
-    east: "expo.out",
+    ease: "expo.out",
     stagger: 0.06,
     delay: 1,
   });
