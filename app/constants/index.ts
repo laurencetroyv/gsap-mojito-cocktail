@@ -71,7 +71,7 @@ export const mock_tail_lists = [
   },
 ]
 
-const profileLists = [
+export const profile_lists = [
   {
     imgPath: "/images/profile1.png",
   },
@@ -100,7 +100,7 @@ export const good_list = [
   "Freshly muddled flavors",
 ]
 
-const storeInfo = {
+const store_info = {
   heading: "Where to Find Us",
   address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
   contact: {
@@ -109,14 +109,14 @@ const storeInfo = {
   },
 }
 
-const openingHours = [
+export const opening_hours = [
   { day: "Mon–Thu", time: "11:00am – 12am" },
   { day: "Fri", time: "11:00am – 2am" },
   { day: "Sat", time: "9:00am – 2am" },
   { day: "Sun", time: "9:00am – 1am" },
 ]
 
-const socials = [
+export const socials = [
   {
     name: "Instagram",
     icon: "/images/insta.png",

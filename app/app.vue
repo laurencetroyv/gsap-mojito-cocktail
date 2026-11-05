@@ -32,5 +32,6 @@ watchEffect(onCleanup => {
     <about />
     <art />
     <menu-list />
+    <contact />
   </main>
 </template>
