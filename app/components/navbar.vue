@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import gsap from "gsap";
-import { nav_links } from "~/constants";
+import gsap from "gsap"
+import { nav_links } from "~/constants"
 
 useGsap(() => {
   const nav_tween = gsap.timeline({
@@ -8,7 +8,7 @@ useGsap(() => {
       trigger: "nav",
       start: "bottom top",
     },
-  });
+  })
 
   nav_tween.fromTo(
     "nav",
@@ -19,20 +19,29 @@ useGsap(() => {
       duration: 1,
       ease: "power1.inOut",
     },
-  );
-});
+  )
+})
 </script>
 
 <template>
   <nav>
     <div>
-      <a href="#home" class="flex items-center gap-2">
-        <img src="/images/logo.png" alt="Logo" />
+      <a
+        href="#home"
+        class="flex items-center gap-2"
+      >
+        <img
+          src="/images/logo.png"
+          alt="Logo"
+        />
         <p>Velvet Pour</p>
       </a>
 
       <ul>
-        <li v-for="link in nav_links" :key="link.id">
+        <li
+          v-for="link in nav_links"
+          :key="link.id"
+        >
           <a :href="`#${link.id}`">{{ link.title }}</a>
         </li>
       </ul>

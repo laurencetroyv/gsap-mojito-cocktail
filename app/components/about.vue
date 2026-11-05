@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import gsap from "gsap";
-import SplitText from "gsap/SplitText";
+import gsap from "gsap"
+import SplitText from "gsap/SplitText"
 
 useGsap(() => {
   const title_split = SplitText.create("#about h2", {
     type: "words",
-  });
+  })
 
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: "#about",
       start: "top center",
     },
-  });
+  })
 
   timeline
     .from(title_split.words, {
@@ -31,13 +31,13 @@ useGsap(() => {
         stagger: 0.04,
       },
       "-=0.5",
-    );
-});
+    )
+})
 </script>
 
 <template>
   <div id="about">
-    <div class="mb-16 md:px-0 px-5">
+    <div class="mb-16 px-5 md:px-0">
       <div class="content">
         <div class="md:col-span-8">
           <p class="badge">Best Cocktails</p>
@@ -53,8 +53,8 @@ useGsap(() => {
             memorable.
           </p>
           <div>
-            <p class="md:text-3xl text-xl font-bold"><span>4.5</span>/5</p>
-            <p class="text-sm text-white-100">More than +12000 customers</p>
+            <p class="text-xl font-bold md:text-3xl"><span>4.5</span>/5</p>
+            <p class="text-white-100 text-sm">More than +12000 customers</p>
           </div>
         </div>
       </div>
@@ -63,29 +63,44 @@ useGsap(() => {
     <div class="top-grid">
       <div class="md:col-span-3">
         <div class="noisy" />
-        <img src="/images/abt1.png" alt="grid-img-1" />
+        <img
+          src="/images/abt1.png"
+          alt="grid-img-1"
+        />
       </div>
 
       <div class="md:col-span-6">
         <div class="noisy" />
-        <img src="/images/abt2.png" alt="grid-img-2" />
+        <img
+          src="/images/abt2.png"
+          alt="grid-img-2"
+        />
       </div>
 
       <div class="md:col-span-3">
         <div class="noisy" />
-        <img src="/images/abt5.png" alt="grid-img-5" />
+        <img
+          src="/images/abt5.png"
+          alt="grid-img-5"
+        />
       </div>
     </div>
 
     <div class="bottom-grid">
       <div class="md:col-span-8">
         <div class="noisy" />
-        <img src="/images/abt3.png" alt="grid-img-3" />
+        <img
+          src="/images/abt3.png"
+          alt="grid-img-3"
+        />
       </div>
 
       <div class="md:col-span-4">
         <div class="noisy" />
-        <img src="/images/abt4.png" alt="grid-img-4" />
+        <img
+          src="/images/abt4.png"
+          alt="grid-img-4"
+        />
       </div>
     </div>
   </div>

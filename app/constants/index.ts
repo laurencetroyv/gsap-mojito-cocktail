@@ -15,7 +15,7 @@ export const nav_links = [
     id: "contact",
     title: "Contact",
   },
-];
+]
 
 export const cocktail_lists = [
   {
@@ -42,7 +42,7 @@ export const cocktail_lists = [
     detail: "600 ml",
     price: "$29",
   },
-];
+]
 
 export const mock_tail_lists = [
   {
@@ -69,7 +69,7 @@ export const mock_tail_lists = [
     detail: "600 ml",
     price: "$29",
   },
-];
+]
 
 const profileLists = [
   {
@@ -84,21 +84,21 @@ const profileLists = [
   {
     imgPath: "/images/profile4.png",
   },
-];
+]
 
 export const feature_lists = [
   "Perfectly balanced blends",
   "Garnished to perfection",
   "Ice-cold every time",
   "Expertly shaken & stirred",
-];
+]
 
 export const good_list = [
   "Handpicked ingredients",
   "Signature techniques",
   "Bartending artistry in action",
   "Freshly muddled flavors",
-];
+]
 
 const storeInfo = {
   heading: "Where to Find Us",
@@ -107,14 +107,14 @@ const storeInfo = {
     phone: "(555) 987-6543",
     email: "hello@jsmcocktail.com",
   },
-};
+}
 
 const openingHours = [
   { day: "Mon–Thu", time: "11:00am – 12am" },
   { day: "Fri", time: "11:00am – 2am" },
   { day: "Sat", time: "9:00am – 2am" },
   { day: "Sun", time: "9:00am – 1am" },
-];
+]
 
 const socials = [
   {
@@ -132,9 +132,9 @@ const socials = [
     icon: "/images/fb.png",
     url: "#",
   },
-];
+]
 
-const sliderLists = [
+export const slider_lists = [
   {
     id: 1,
     name: "Classic Mojito",
@@ -167,4 +167,4 @@ const sliderLists = [
     description:
       "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
   },
-];
+]
