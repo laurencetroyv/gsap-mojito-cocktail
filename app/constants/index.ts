@@ -71,21 +71,6 @@ export const mock_tail_lists = [
   },
 ]
 
-export const profile_lists = [
-  {
-    imgPath: "/images/profile1.png",
-  },
-  {
-    imgPath: "/images/profile2.png",
-  },
-  {
-    imgPath: "/images/profile3.png",
-  },
-  {
-    imgPath: "/images/profile4.png",
-  },
-]
-
 export const feature_lists = [
   "Perfectly balanced blends",
   "Garnished to perfection",
@@ -99,15 +84,6 @@ export const good_list = [
   "Bartending artistry in action",
   "Freshly muddled flavors",
 ]
-
-const store_info = {
-  heading: "Where to Find Us",
-  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
-  contact: {
-    phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
-  },
-}
 
 export const opening_hours = [
   { day: "Mon–Thu", time: "11:00am – 12am" },
