@@ -5,7 +5,7 @@ import { feature_lists, good_list } from "~/constants"
 const is_mobile = useMediaQuery("(max-width: 767px)")
 
 useGsap(() => {
-  const start = is_mobile ? "top 20%" : "top top"
+  const start = is_mobile.value ? "top 20%" : "top top"
 
   const masked_timeline = gsap.timeline({
     scrollTrigger: {
@@ -21,10 +21,9 @@ useGsap(() => {
     .to(".will-fade", { opacity: 0, stagger: 0.2, ease: "power1.inOut" })
     .to(".masked-img", {
       scale: 1.3,
-      maskPosition: "center",
-      maskSize: "400%",
+      maskSize: "400% auto",
       duration: 1,
-      ease: "power1.inOut ",
+      ease: "power1.inOut",
     })
     .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" })
 })
