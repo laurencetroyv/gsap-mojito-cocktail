@@ -257,6 +257,7 @@
     "watchWithFilter": "readonly",
     "whenever": "readonly",
     "useGsap": "readonly",
+    "useNuxtDevTools": "readonly",
     "cancelIdleCallback": "readonly",
     "requestIdleCallback": "readonly",
     "setInterval": "readonly",
@@ -467,6 +468,7 @@
     "isVue3": "readonly"
   },
   "rules": {
+    "vite-plus/prefer-vite-plus-imports": "error",
     "vize/nuxt/prefer-import-meta": "error"
   },
   "overrides": [

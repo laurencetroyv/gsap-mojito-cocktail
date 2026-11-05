@@ -18,8 +18,8 @@ export default defineNuxtConfig({
     },
   },
   vize: {
-    compiler: true,
-    lint: true,
-    checker: true,
+    compiler: false,
+    lint: false,
+    checker: false,
   },
 })
