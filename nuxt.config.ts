@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  modules: ["@vueuse/nuxt/module", "@vizejs/nuxt", "lenis/nuxt"],
+  modules: ["@vueuse/nuxt/module", "lenis/nuxt"],
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   vite: {
@@ -16,10 +16,5 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ["gsap", "gsap/ScrollTrigger", "gsap/SplitText"],
     },
-  },
-  vize: {
-    compiler: false,
-    lint: false,
-    checker: false,
   },
 })

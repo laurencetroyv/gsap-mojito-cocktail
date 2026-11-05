@@ -23,9 +23,6 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
-    "@vizejs/nuxt": "^0.608.0",
-    "oxlint": "^1.91.0",
-    "oxlint-plugin-vize": "^0.608.0",
     "vite-plus": "^1.4.0"
   }
 }
